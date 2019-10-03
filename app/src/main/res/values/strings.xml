@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AtlantaZoo</string>
+    <string name="atlanta_zoo_tv">Atlanta Zoo!!!</string>
+    <string name="animals_btn">Animals</string>
 </resources>
