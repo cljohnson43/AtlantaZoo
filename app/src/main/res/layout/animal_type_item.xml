@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
+    android:id="@+id/types_tv"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/types_tv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textSize="@dimen/animal_type_font_size"
     android:textColor="#000000"
-    android:textAlignment="center"
+    android:textAlignment="textStart"
+    android:padding="24dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     tools:text="TYPE"

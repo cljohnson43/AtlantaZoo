@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import com.example.atlantazoo.R
+import com.example.atlantazoo.adapters.ZooAnimalTypesAdapter
 import kotlinx.android.synthetic.main.activity_zoo_animal_types.*
 
 const val MAMMAL = "Mammal"
@@ -29,8 +30,7 @@ class ZooAnimalTypes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zoo_animal_types)
 
-        types_lv.adapter = ArrayAdapter(this, R.layout.animal_type_item, types)
-
+        types_lv.adapter = ZooAnimalTypesAdapter(types)
 
     }
 

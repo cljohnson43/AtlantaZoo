@@ -1,43 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:background="@color/main_background"
     tools:context=".views.MainActivity">
 
     <ImageView
-        android:id="@+id/atlanta_zoo_iv"
-        android:layout_width="wrap_content"
+        android:id="@+id/background_image_iv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/atlanta_zoo_background"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/atlanta_zoo_1920x1280"
+        android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
         android:id="@+id/atlanta_zoo_tv"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="@string/atlanta_zoo_tv"
+        android:layout_gravity="left"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="24dp"
+        android:text="@string/atlanta_zoo_tv"
+        android:textSize="32sp"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/atlanta_zoo_iv"
+        app:layout_constraintTop_toBottomOf="@id/background_image_iv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
         android:id="@+id/animals_tv"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="24dp"
         android:text="@string/animals_btn"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/atlanta_zoo_tv"
-        app:layout_constraintStart_toStartOf="@id/atlanta_zoo_tv"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
