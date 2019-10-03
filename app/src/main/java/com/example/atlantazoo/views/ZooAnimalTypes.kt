@@ -31,7 +31,6 @@ class ZooAnimalTypes : AppCompatActivity() {
         setContentView(R.layout.activity_zoo_animal_types)
 
         types_lv.adapter = ZooAnimalTypesAdapter(types)
-
     }
 
 
